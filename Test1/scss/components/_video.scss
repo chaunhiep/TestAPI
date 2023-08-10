@@ -6,109 +6,109 @@
     overflow: hidden;
     filter: blur(0);
     -webkit-filter: blur(0);
+
+    &__image {
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+        display: block;
+        z-index: 2;
+
+        &_direction {
+            &_vertical {
+                height: 40vh;
+            }
+
+            &_horizontal {
+                height: 30vh;
+            }
+        }
+    }
+
+    &__overlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+
+        &_opacity_60 {
+            background-color: rgb(0, 0, 0, 0.3);
+            backdrop-filter: blur(0.5rem);
+            -webkit-backdrop-filter: blur(0.25rem);
+        }
+
+        &_gradient_000 {
+            background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 0.8));
+        }
+    }
+
+    &__content {
+        width: 100%;
+        position: absolute;
+        z-index: 3;
+        bottom: 0;
+        @include flex-row;
+        padding: 0.5rem 1rem;
+        justify-content: space-between;
+        gap: 0.5rem;
+
+        &_height {
+            &_30 {
+                height: 30%;
+            }
+
+            &_50 {
+                height: 50%;
+            }
+        }
+
+        &_align_vertical {
+            margin: auto;
+            margin-left: 0;
+        }
+
+        &_color_gray {
+            color: $text-second-color;
+        }
+
+        &_space-x2 {
+            @include flex-col;
+            gap: 0.5rem;
+        }
+    }
+
+    &__badge {
+        padding: 0.35rem;
+        width: fit-content;
+        background-color: rgb(255, 255, 255, 0.5);
+        backdrop-filter: blur(0.5rem);
+        -webkit-backdrop-filter: blur(0.25rem);
+        border-radius: $radios;
+    }
 }
 
 .intro-video {
     width: 100%;
     @include flex-row;
     gap: 0.8rem;
-}
 
-.intro-video__image {
-    @include col-3;
-    width: 10vh;
-    height: 10vh;
-    border-radius: 0.5rem;
-    object-fit: cover;
-}
+    &__image {
+        @include col-3;
+        width: 10vh;
+        height: 10vh;
+        border-radius: 0.5rem;
+        object-fit: cover;
+    }
 
-.intro-video__content_play {
-    @include col-9;
-    @include flex-row;
-    justify-content: space-between;
-}
+    &__content {
+        @include flex-col;
+        gap: 0.5rem;
+    }
 
-.intro-video__content {
-    @include flex-col;
-    gap: 0.5rem;
-}
-
-.video__image {
-    width: 100%;
-    object-fit: cover;
-    position: relative;
-    display: block;
-    z-index: 2;
-}
-
-.video__image_direction_vertical {
-    height: 40vh;
-}
-
-.video__image_direction_horizontal {
-    height: 30vh;
-}
-
-.video__overlay {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    z-index: 2;
-}
-
-.video__overlay_opacity_60 {
-    background-color: rgb(0, 0, 0, 0.3);
-    backdrop-filter: blur(0.5rem);
-    -webkit-backdrop-filter: blur(0.25rem);
-}
-
-.video__overlay_gradient_000 {
-    background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 0.8));
-}
-
-.video__content {
-    width: 100%;
-    position: absolute;
-    z-index: 3;
-    bottom: 0;
-    @include flex-row;
-    padding: 0.5rem 1rem;
-    justify-content: space-between;
-    gap: 0.5rem;
-}
-
-.video__content_height_30 {
-    height: 30%;
-}
-
-.video__content_height_50 {
-    height: 50%;
-}
-
-.video__content_align_vertical {
-    margin: auto;
-    margin-left: 0;
-}
-
-.video__content_color_gray {
-    color: $text-second-color;
-}
-
-.video__content_space-x2 {
-    @include flex-col;
-    gap: 0.5rem;
-}
-
-.video__badge {
-    padding: 0.35rem;
-    width: fit-content;
-    background-color: rgb(255, 255, 255, 0.5);
-    backdrop-filter: blur(0.5rem);
-    -webkit-backdrop-filter: blur(0.25rem);
-    border-radius: $radios;
-}
-
-.button_align_middle {
-    margin: auto;
+    &__content_play {
+        @include col-9;
+        @include flex-row;
+        justify-content: space-between;
+    }
 }

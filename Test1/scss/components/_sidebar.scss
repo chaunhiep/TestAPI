@@ -13,19 +13,19 @@
     padding: 1rem;
     padding-bottom: 0;
     @include flex-col;
-}
 
-.trailer__video {
-    overflow: scroll;
-}
+    &__video {
+        overflow: scroll;
 
-.trailer__video::-webkit-scrollbar {
-    display: none;
-}
+        &::-webkit-scrollbar {
+            display: none;
+        }
 
-.trailer__video_flex_col {
-    @include flex-col;
-    gap: 1rem;
+        &_flex_col {
+            @include flex-col;
+            gap: 1rem;
+        }
+    }
 }
 
 .continue {
