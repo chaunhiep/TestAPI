@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/dist/style.css">
+    <script type="module" src="./js/index.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="page_content">
+        <nav class="nav">
+            <input class="nav__search search__input" type="text" placeholder="Search movie">
+            <div class="nav__navigate">
+                <ul class="nav__ul_direction_horizontal">
+                    <li><a href="">Movies</a></li>
+                    <li><a href="">TV Series</a></li>
+                    <li><a href="">Animation</a></li>
+                    <li><a href="">Mistery</a></li>
+                    <li><a href="">More</a></li>
+                </ul>
+                <div class="nav__navigate_group_tool">
+                    <button class="button button_theme_dark button_align_middle"><i class="fas fa-bell"></i></button>
+                    <div class="button button_border_smaller button_theme_dark">Arfi Maulana</div>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="content">
+            <div class="sidebar">
+                <div class="trailer">
+                    <h3>New Trailer</h3>
+                    <div class="trailer__video">
+                        <div class="trailer__video_flex_col">
+                            <div class="video" id="video-1" 
+                                data-title="Spider-Man: Into the Spider-Verse" 
+                                data-desc="Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence. When the heroes clash on how to handle a new threat, Miles must redefine what it means to be a hero." 
+                                data-src="./video/SpiderMan-2.mp4" 
+                                data-img="./image/spider-verse.png"
+                                >
+
+                                <img class="video__image video__image_direction_horizontal" src="./image/spider-verse.png" alt="The Last Kingdom">
+                                <div class="video__content video__overlay_opacity_60 video__content_height_30">
+                                    <h4 class="video__content_align_vertical">Spider-Man: Into the Spider-Verse</h4>
+                                    <button class="button button_theme_dark"><i class="fas fa-play"></i></i></button>
+                                </div>
+                            </div>
+
+                            <div class="video" id="video-2" 
+                                data-title="The Last Kingdom: Seven Kings Must Die" 
+                                data-desc="As Alfred the Great defends his kingdom from Norse invaders, Uhtred--born a Saxon but raised by Vikings--seeks to claim his ancestral birthright." 
+                                data-src="./video/LastKingdom.mp4" 
+                                data-img="./image/last-kingdom.jpg"
+                                >
+
+                                <img class="video__image video__image_direction_horizontal" src="./image/last-kingdom.jpg" alt="The Last Kingdom">
+                                <div class="video__content video__overlay_opacity_60 video__content_height_30">
+                                    <h4 class="video__content_align_vertical">The Last Kingdom: Seven Kings Must Die</h4>
+                                    <button class="button button_theme_dark"><i class="fas fa-play"></i></i></button>
+                                </div>
+                            </div>
+        
+                            <div class="video" id="video-3"
+                                data-title="Spider-Man: Across the Spider-Verse" 
+                                data-desc="Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence. When the heroes clash on how to handle a new threat, Miles must redefine what it means to be a hero." 
+                                data-src="./video/SpiderMan-2.mp4" 
+                                data-img="./image/spider-man.jpg"
+                                >
+                                <img class="video__image video__image_direction_horizontal" src="./image/spider-man.jpg" alt="Spider-Man: Across the Spider-Verse">
+                                <div class="video__content video__overlay_opacity_60 video__content_height_30">
+                                    <h4 class="video__content_align_vertical">Spider-Man: Across the Spider-Verse</h4>
+                                    <button class="button button_theme_dark"><i class="fas fa-play"></i></button>
+                                </div>
+                            </div>
+        
+                            <div class="video" id="video-4"
+                                data-title="The Flash (2023)" 
+                                data-desc="Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence. When the heroes clash on how to handle a new threat, Miles must redefine what it means to be a hero." 
+                                data-src="./video/TheFlash.mp4" 
+                                data-img="./image/the-flash.jpg"
+                                >
+                                <img class="video__image video__image_direction_horizontal" src="./image/the-flash.jpg" alt="The Flash (2023)">
+                                <div class="video__content video__overlay_opacity_60 video__content_height_30">
+                                    <h4 class="video__content_align_vertical">The Flash (2023)</h4>
+                                    <button class="button button_theme_dark"><i class="fas fa-play"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="continue">
+                    <h3>Continue watching</h3>
+                    <div class="trailer__video">
+                        <div class="trailer__video_flex_col">
+                            <div class="intro-video" id="introvideo-1"
+                                data-title="Elemental" 
+                                data-desc="Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence. When the heroes clash on how to handle a new threat, Miles must redefine what it means to be a hero." 
+                                data-src="./video/Elemental.mp4" 
+                                data-img="./image/elemental.jpg"
+                                >
+                                <img class="intro-video__image" src="./image/elemental.jpg" alt="Elemental">
+                                <div class="intro-video__content_play">
+                                    <div class="intro-video__content">
+                                        <h4>Elemental</h4>
+                                        <p class="p_font_sm video__content_color_gray">Episode 3</p>
+                                    </div>
+                                    <button class="button button_theme_mixed"><i class="fas fa-play"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="intro-video" id="introvideo-2"
+                                data-title="Avatar (2022)" 
+                                data-desc="Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence. When the heroes clash on how to handle a new threat, Miles must redefine what it means to be a hero." 
+                                data-src="./video/Avatar.mp4" 
+                                data-img="./image/avatar.jpg"
+                                >
+                                <img class="intro-video__image" src="./image/avatar.jpg" alt="Avatar (2022)">
+                                <div class="intro-video__content_play">
+                                    <div class="intro-video__content">
+                                        <h4>Avatar (2022)</h4>
+                                        <p class="p_font_sm video__content_color_gray">Episode 10</p>
+                                    </div>
+                                    <button class="button button_theme_mixed"><i class="fas fa-play"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="intro-video" id="introvideo-3"
+                                data-title="The Last Kingdom" 
+                                data-desc="Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence. When the heroes clash on how to handle a new threat, Miles must redefine what it means to be a hero." 
+                                data-src="./video/LastKingdom.mp4" 
+                                data-img="./image/last-kingdom.jpg"
+                                >
+                                <img class="intro-video__image" src="./image/last-kingdom.jpg" alt="Elemental">
+                                <div class="intro-video__content_play">
+                                    <div class="intro-video__content">
+                                        <h4>The Last Kingdom</h4>
+                                        <p class="p_font_sm video__content_color_gray">Episode 3</p>
+                                    </div>
+                                    <button class="button button_theme_mixed"><i class="fas fa-play"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="intro-video" id="introvideo-4"
+                                data-title="Tár" 
+                                data-desc="Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence. When the heroes clash on how to handle a new threat, Miles must redefine what it means to be a hero." 
+                                data-src="./video/Tar.mp4" 
+                                data-img="./image/tar-movie.jpg"
+                                >
+                                <img class="intro-video__image" src="./image/tar-movie.jpg" alt="Elemental">
+                                <div class="intro-video__content_play">
+                                    <div class="intro-video__content">
+                                        <h4>Tár</h4>
+                                        <p class="p_font_sm video__content_color_gray">Episode 3</p>
+                                    </div>
+                                    <button class="button button_theme_mixed"><i class="fas fa-play"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="intro-video" id="introvideo-5"
+                                data-title="Spider-Man: Into the Spider-Verse" 
+                                data-desc="Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence. When the heroes clash on how to handle a new threat, Miles must redefine what it means to be a hero." 
+                                data-src="./video/SpiderMan-2.mp4" 
+                                data-img="./image/spider-man.jpg"
+                                >
+                                <img class="intro-video__image" src="./image/spider-man.jpg" alt="Elemental">
+                                <div class="intro-video__content_play">
+                                    <div class="intro-video__content">
+                                        <h4>Spider-Man</h4>
+                                        <p class="p_font_sm video__content_color_gray">Episode 3</p>
+                                    </div>
+                                    <button class="button button_theme_mixed"><i class="fas fa-play"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="intro-video" id="introvideo-6"
+                                data-title="The Flash" 
+                                data-desc="Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence. When the heroes clash on how to handle a new threat, Miles must redefine what it means to be a hero." 
+                                data-src="./video/TheFlash.mp4" 
+                                data-img="./image/the-flash.jpg"
+                                >
+                                <img class="intro-video__image" src="./image/the-flash.jpg" alt="Elemental">
+                                <div class="intro-video__content_play">
+                                    <div class="intro-video__content">
+                                        <h4>The Flash</h4>
+                                        <p class="p_font_sm video__content_color_gray">Episode 3</p>
+                                    </div>
+                                    <button class="button button_theme_mixed"><i class="fas fa-play"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="main">
+                <div class="banner" is="banner-video" data-id=""
+                    data-title="" 
+                    data-desc="" 
+                    data-src="" 
+                    data-img=""
+                    >
+                    <div class="banner__content">
+                        <h2></h2>
+                        <p class="banner__content_color_gray"></p>
+                        <button class="button button_theme_dark button_border_smaller container__button"><i class="fas fa-play"></i> Watch</button>
+                        <div class="container__button container__button_hidden">
+                            <button id="backButton" class="button button_theme_dark"><i class="fas fa-backward"></i></button>
+                            <button id="playButton" class="button button_theme_dark"><i class="fas fa-play"></i></button>
+                            <button id="nextButton" class="button button_theme_dark"><i class="fas fa-forward"></i></button>
+                            <span class="video__time"><span class="video__currentTime">00:00</span> / <span class="video__duration">00:00</span></span>
+                            <div class="progress">
+                                <progress class="video__progressbar" value="0" min="0"></progress>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner__overlay"></div>
+                    <video id="mainVideo" class="banner__img" preload="metadata" poster="">
+                        <source src="" type="video/mp4" />
+                    </video>
+                </div>
+    
+                <div class="suggest">
+                    <h2>You might like</h2>
+                    <div class="suggest__products">
+
+                        <div class="video" id="suggest-1"
+                            data-title="The Last Kingdom" 
+                            data-desc="Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence. When the heroes clash on how to handle a new threat, Miles must redefine what it means to be a hero." 
+                            data-src="./video/LastKingdom.mp4" 
+                            data-img="./image/last-kingdom.jpg"
+                            >
+                            <img class="video__image video__image_direction_vertical" src="./image/last-kingdom.jpg" alt="The Last Kingdom">
+                            <div class="video__overlay video__overlay_gradient_000"></div>
+                            <div class="video__content video__content_height_50">
+                                <div class="video__content_space-x2">
+                                    <span class="video__badge p_font_sm">Fantasy</span>
+                                    <h4>Last Kingdom</h4>
+                                    <p class="p_font_sm video__content_color_gray">As Alfred the Great defends his kingdom from ...</p>
+                                </div>
+                                <button class="button button_theme_light button_align_middle"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+    
+                        <div class="video" id="suggest-2"
+                            data-title="Tár" 
+                            data-desc="Renowned musician Lydia Tár is days away from recording the symphony that will elevate her career. When all elements seem to conspire against her, Lydia's adopted daughter Petra becomes an integral emotional support for her struggling mother." 
+                            data-src="./video/Tar.mp4" 
+                            data-img="./image/tar-movie.jpg"
+                            >
+                            <img class="video__image video__image_direction_vertical" src="./image/tar-movie.jpg" alt="Tár">
+                            <div class="video__overlay video__overlay_gradient_000"></div>
+                            <div class="video__content video__content_height_50">
+                                <div class="video__content_space-x2">
+                                    <span class="video__badge p_font_sm">Music</span>
+                                    <h4>Tár</h4>
+                                    <p class="p_font_sm video__content_color_gray">Lydia Tár is the first female chief conductor ...</p>
+                                </div>
+                                <button class="button button_theme_light button_align_middle"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+    
+                        <div class="video" id="suggest-3"
+                            data-title="Elemental" 
+                            data-desc="Renowned musician Lydia Tár is days away from recording the symphony that will elevate her career. When all elements seem to conspire against her, Lydia's adopted daughter Petra becomes an integral emotional support for her struggling mother." 
+                            data-src="./video/Elemental.mp4" 
+                            data-img="./image/elemental.jpg"
+                            >
+                            <img class="video__image video__image_direction_vertical" src="./image/elemental.jpg" alt="Elemental">
+                            <div class="video__overlay video__overlay_gradient_000"></div>
+                            <div class="video__content video__content_height_50">
+                                <div class="video__content_space-x2">
+                                    <span class="video__badge p_font_sm">Children</span>
+                                    <h4>Elemental</h4>
+                                    <p class="p_font_sm video__content_color_gray">As Alfred the Great defends his kingdom from ...</p>
+                                </div>
+                                <button class="button button_theme_light button_align_middle"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+    
+                        <div class="video" id="suggest-4"
+                            data-title="Interstellar" 
+                            data-desc="Renowned musician Lydia Tár is days away from recording the symphony that will elevate her career. When all elements seem to conspire against her, Lydia's adopted daughter Petra becomes an integral emotional support for her struggling mother." 
+                            data-src="./video/Interstellar.mp4" 
+                            data-img="./image/interstellar.jpg"
+                            >
+                            <img class="video__image video__image_direction_vertical" src="./image/interstellar.jpg" alt="Interstellar">
+                            <div class="video__overlay video__overlay_gradient_000"></div>
+                            <div class="video__content video__content_height_50">
+                                <div class="video__content_space-x2">
+                                    <span class="video__badge p_font_sm">Science</span>
+                                    <h4>Interstellar</h4>
+                                    <p class="p_font_sm video__content_color_gray">As Alfred the Great defends his kingdom from ...</p>
+                                </div>
+                                <button class="button button_theme_light button_align_middle"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

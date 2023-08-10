@@ -1,0 +1,47 @@
+.sidebar {
+    @include col-3;
+    @include flex-col;
+    gap: 2rem;
+}
+
+.trailer {
+    border-radius: $radios;
+    background-color: $secondary-color;
+    height: 65vh;
+    gap: 0.5rem;
+    overflow: hidden;
+    padding: 1rem;
+    padding-bottom: 0;
+    @include flex-col;
+}
+
+.trailer__video {
+    overflow: scroll;
+}
+
+.trailer__video::-webkit-scrollbar {
+    display: none;
+}
+
+.trailer__video_flex_col {
+    @include flex-col;
+    gap: 1rem;
+}
+
+.continue {
+    border-radius: $radios;
+    background-color: $secondary-color;
+    height: 50vh;
+    gap: 0.5rem;
+    overflow: hidden;
+    padding: 1rem;
+    padding-bottom: 0;
+    @include flex-col;
+}
+
+
+@media screen and (max-width: 412px) {
+    .sidebar {
+        @include col-12;
+    }
+}

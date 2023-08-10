@@ -1,0 +1,55 @@
+.nav {
+    @include flex-row;
+    gap: 2rem;
+}
+
+.nav__search {
+    @include col-3;
+}
+
+.search__input::placeholder {
+    color: $text-second-color;
+}
+
+.search__input {
+    border-radius: $radios;
+    border: 0;
+    color: $text-color;
+    background-color: $primary-color;
+    padding-left: 1rem; 
+}
+
+.nav__navigate {
+    @include col-9;
+    @include flex-row;
+    justify-content: space-between;
+}
+
+.nav__ul_direction_horizontal {
+    list-style-type: none;
+    @include flex-row;
+    gap: 2rem;
+    margin: 0.5rem 0;
+    padding: 0;
+}
+
+.nav__navigate_group_tool {
+    @include flex-row;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 412px) {
+    .nav {
+        @include flex-col;
+        gap: 2rem;
+    }
+
+    .nav__search {
+        @include col-12;
+        height: 5vh;
+    }
+
+    .nav__navigate_group_tool {
+        display: none;
+    }
+}

@@ -1,0 +1,89 @@
+.main {
+    @include col-9;
+    @include flex-col;
+    gap: 2rem;
+}
+
+.banner {
+    position: relative;
+    border-radius: $radios;
+    background-color: $secondary-color;
+    overflow: hidden;
+    width: 100%;
+    height: 65vh;
+}
+
+.banner__img {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner__overlay {
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
+
+.banner__content {
+    position: absolute;
+    bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    z-index: 4;
+}
+
+.video__progressbar {
+    height: 1.5vh;
+    width: 100%;
+}
+
+.video__progressbar:hover {
+    cursor: pointer;
+}
+
+.video__time {
+    display: inline-block;
+    margin: auto;
+    margin-left: 1rem;
+}
+
+.container__button_hidden {
+    display: none;
+}
+
+.banner__content_color_gray {
+    color: $text-second-color;
+}
+
+.suggest {
+    @include flex-col;
+    height: 50vh;
+    justify-content: space-between
+}
+
+.suggest__products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+
+@media screen and (max-width: 412px) {
+    .main {
+        @include col-12;
+    }
+
+    .suggest {
+        height: fit-content;
+    }
+
+    .suggest__products {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+}

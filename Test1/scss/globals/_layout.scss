@@ -1,0 +1,63 @@
+$radios: 16px;
+
+* {
+    box-sizing: border-box;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin col-1 {
+    width: 8.33%;
+}
+
+@mixin col-2 {
+    width: 16.66%;
+}
+
+@mixin col-3 {
+    width: 25%;
+}
+
+@mixin col-4 {
+    width: 33.33%;
+}
+
+@mixin col-5 {
+    width: 41.66%;
+}
+
+@mixin col-6 {
+    width: 50%;
+}
+
+@mixin col-7 {
+    width: 58.33%;
+}
+
+@mixin col-8 {
+    width: 66.66%;
+}
+
+@mixin col-9 {
+    width: 75%;
+}
+
+@mixin col-10 {
+    width: 83.33%;
+}
+
+@mixin col-11 {
+    width: 91.66%;
+}
+
+@mixin col-12 {
+    width: 100%;
+}

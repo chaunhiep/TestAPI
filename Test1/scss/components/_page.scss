@@ -1,0 +1,20 @@
+.page_content {
+    width: 95%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    @include flex-col;
+    gap: 1rem;
+}
+
+.content {
+    @include flex-row;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 412px) {
+    .content {
+        @include flex-col;
+        gap: 2rem;
+    }
+}
